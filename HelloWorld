@@ -1,0 +1,9 @@
+
+let http = new XMLHttpRequest();
+let url = "https://localhost:3000";
+
+http.open("POST", url);
+http.setRequestHeader("Message", "Howdy")
+http.send();
+
+

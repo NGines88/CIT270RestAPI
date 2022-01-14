@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "CIT 270 API",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NGines88/CIT270RestAPI.git"
+  },
+  "author": "Nick Gines",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NGines88/CIT270RestAPI/issues"
+  },
+  "homepage": "https://github.com/NGines88/CIT270RestAPI#readme"
+}
