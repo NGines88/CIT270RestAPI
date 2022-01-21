@@ -3,7 +3,8 @@
     "express": "^4.17.2"
   },
   "scripts": {
-    "start": "node server.js"
+    "hello": "node helloworld.js",
+    "server": "node server.js"
   },
   "name": "nodejs",
   "version": "1.0.0",

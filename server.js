@@ -1,3 +1,11 @@
-let mess = new XMLHttpRequest();
+const express = require('express');
+const port = 3000;
+const app = express();
 
-console.log(mess.HEADERS_RECEIVED);
+app.get('/', (req, res) => {
+    res.send("Hello Browser");
+});
+
+app.listen(port, () => {});
+
+console.log("Hello");
