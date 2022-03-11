@@ -6,6 +6,10 @@ const md5 = require('md5');
 const https = require('https');
 const fs = require('fs');
 
+
+app.use(express.static('public'));
+
+
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
