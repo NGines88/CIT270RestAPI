@@ -23,13 +23,18 @@ https.createServer({
   console.log('Listening...');
 });
 
-
+let logAttempts = 0;
 app.post('/login', (req,res)=> {
     console.log(JSON.stringify(req.body));
     
-    if (req.body.userName == "Anakin" && md5(req.body.password) == 'cbace61a82ad3afd5737bc5c78072689') {
+    if (req.body.userName == "Anakin" && md5(req.body.password) == '351df55da05e67c4e69ce3cce27c62f2') {
         res.send("Welcome Master")
     } else {
+        logAttempts += 1;
+        if (logAttempts >= 5) {
+            
+        }
+        res.status(401); //Unauthorized
         res.send("Only a sith hacks a computer")
     }
 });
